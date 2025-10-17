@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IST</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="http://est-minya.com" class="glow-text">IST</a>
+    </div>
+
+    <div class="menu">
+      <div class="inf">
+        <div class="badge">
+          Info
+          <div class="dropdown">
+            <a href="#" id="aboutBtn">About</a>
+            <a href="#" id="coursesBtn">Courses</a>
+            <a href="#" id="helpBtn">Help</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="subject">
+        <div class="badge">
+          Subject
+          <div class="dropdown">
+            <a href="#" onclick="openPopup('popupDecisionSupport')">نظم دعم القرار</a>
+            <a href="#" onclick="openPopup('popupNetworks')">شبكات وامن المعلومات</a>
+            <a href="#" onclick="openPopup('popupHR')">ادارة الافراد</a>
+            <a href="#" onclick="openPopup('popupAccounting')">محاسبة ادارية</a>
+            <a href="#" onclick="openPopup('popupAccountingE')">دراسات محاسبية E</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <h1><span class="glow-text">Welcome to IST</span></h1>
+      <p>Your gateway to innovation, education, and excellence.</p>
+      <div class="image-placeholder"></div>
+    </section>
+
+    <section class="cards">
+      <div class="card glass">
+        <h2>Academic Excellence</h2>
+        <p>We strive to provide top-quality education that prepares students for the future.</p>
+      </div>
+
+      <div class="card glass">
+        <h2>Modern Facilities</h2>
+        <p>State-of-the-art labs, smart classrooms, and digital learning environments.</p>
+      </div>
+
+      <div class="card glass">
+        <h2>Student Life</h2>
+        <p>Engage, learn, and grow within a vibrant academic community.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- About Popup -->
+  <div class="popup" id="aboutPopup">
+    <div class="popup-content glass">
+      <h2>About Us</h2>
+      <p>
+        Address: المجمع التعليمي بالمنطقة الصناعية - المنيا الجديدة بجوار المدرسة الألمانية<br />
+        Phone Number: 01222200365
+      </p>
+      <div class="popup-buttons">
+        <button class="close-btn" onclick="closePopup('aboutPopup')">Close</button>
+        <button class="contact-btn" onclick="window.open('https://www.est-minya.com', '_blank')">Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Courses Popup -->
+  <div class="popup" id="coursesPopup">
+    <div class="popup-content glass">
+      <h2>Courses</h2>
+      <p>سيتم إضافة الكورسات قريبًا...</p>
+      <button class="close-btn" onclick="closePopup('coursesPopup')">Close</button>
+    </div>
+  </div>
+
+  <!-- Help Popup -->
+  <div class="popup" id="helpPopup">
+    <div class="popup-content glass">
+      <h2>Help</h2>
+      <p>لو محتاج مساعده تواصل معنا عبر البريد الالكتروني</p>
+      <div class="popup-buttons">
+        <button class="close-btn" onclick="closePopup('helpPopup')">Close</button>
+        <button class="contact-btn" onclick="window.location.href='mailto:info@est-minya.com'">Contact Us</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- نظم دعم القرار Popup -->
+  <div class="popup" id="popupDecisionSupport">
+    <div class="popup-content glass">
+      <h2 class="subject-doctor">Dr. </h2>
+      <p>Choose what you want to access:</p>
+      <div class="popup-buttons">
+        <button onclick="window.open('#', '_blank')">PDF's</button>
+        <button onclick="window.open('#', '_blank')">Assignments</button>
+        <button onclick="window.open('#', '_blank')">Books</button>
+        <button onclick="window.open('#', '_blank')">Statements</button>
+        <button class="close-btn" onclick="closePopup('popupDecisionSupport')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- شبكات وامن المعلومات Popup -->
+  <div class="popup" id="popupNetworks">
+    <div class="popup-content glass">
+      <h2 class="subject-doctor">Dr. Networks & Security</h2>
+      <p>Choose what you want to access:</p>
+      <div class="popup-buttons">
+        <button onclick="window.open('#', '_blank')">PDF's</button>
+        <button onclick="window.open('#', '_blank')">Assignments</button>
+        <button onclick="window.open('#', '_blank')">Books</button>
+        <button onclick="window.open('#', '_blank')">Statements</button>
+        <button class="close-btn" onclick="closePopup('popupNetworks')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- إدارة الأفراد Popup -->
+  <div class="popup" id="popupHR">
+    <div class="popup-content glass">
+      <h2 class="subject-doctor">Dr. Human Resources</h2>
+      <p>Choose what you want to access:</p>
+      <div class="popup-buttons">
+        <button onclick="window.open('#', '_blank')">PDF's</button>
+        <button onclick="window.open('#', '_blank')">Assignments</button>
+        <button onclick="window.open('#', '_blank')">Books</button>
+        <button onclick="window.open('#', '_blank')">Statements</button>
+        <button class="close-btn" onclick="closePopup('popupHR')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- محاسبة ادارية Popup -->
+  <div class="popup" id="popupAccounting">
+    <div class="popup-content glass">
+      <h2 class="subject-doctor">Dr. Accounting</h2>
+      <p>Choose what you want to access:</p>
+      <div class="popup-buttons">
+        <button onclick="window.open('#', '_blank')">PDF's</button>
+        <button onclick="window.open('#', '_blank')">Assignments</button>
+        <button onclick="window.open('#', '_blank')">Books</button>
+        <button onclick="window.open('#', '_blank')">Statements</button>
+        <button class="close-btn" onclick="closePopup('popupAccounting')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- دراسات محاسبية E Popup -->
+  <div class="popup" id="popupAccountingE">
+    <div class="popup-content glass">
+      <h2 class="subject-doctor">Dr. Accounting E</h2>
+      <p>Choose what you want to access:</p>
+      <div class="popup-buttons">
+        <button onclick="window.open('#', '_blank')">PDF's</button>
+        <button onclick="window.open('#', '_blank')">Assignments</button>
+        <button onclick="window.open('#', '_blank')">Books</button>
+        <button onclick="window.open('#', '_blank')">Statements</button>
+        <button class="close-btn" onclick="closePopup('popupAccountingE')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function closePopup(popupId) {
+      document.getElementById(popupId).style.display = 'none';
+    }
+
+    function openPopup(popupId) {
+      document.getElementById(popupId).style.display = 'block';
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer glass">
+    © All Rights Reserved to <span class="highlighted-name">Abdelrahman Sayed Hammam</span>
+  </footer>
+
+</body>
+</html>
